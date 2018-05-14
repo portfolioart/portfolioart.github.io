@@ -1,1 +1,0 @@
-$('.wrapper').css('display', 'none');
