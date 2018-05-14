@@ -1,0 +1,208 @@
+
+/*===General Settings===*/
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: "Roboto", sans-serif;
+	color: #333;
+}
+
+a, a:hover, a:visited{
+	text-decoration: none;
+}
+
+li{
+	list-style: none;
+}
+
+.main-section{
+	padding: 25px 40px;
+	text-align: center;
+}
+
+.transition-object{
+	transition: 0.2s;
+}
+
+.section-header h2{
+	font-size: 36px;
+	margin: 20px 10px;
+}
+
+.button{
+	padding: 15px 25px;
+	border-radius: 6px;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 700;
+	color: #333;
+	border: 1px solid rgba(0,0,0,0);
+	transition: 0.2s;
+}
+
+
+/*===Header===*/
+
+#header{
+	height: 100vh;
+	background: url("../img/header-bg.jpg") center center no-repeat / cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 25px;
+	box-shadow: 0px 1px 25px 2px #333;
+}
+
+	#header img{
+		margin-top: 25px;
+	}
+
+	.offer{
+		text-align: center;
+		color: #f6f6f6;
+		margin-bottom: 25px;
+	}
+
+		.offer h1{
+			font-size: 48px;
+			margin-bottom: 20px;
+		}
+
+		.offer p{
+			max-width: 600px;
+			font-size: 18px;
+			margin-bottom: 25px;
+		}
+
+		.btn-offer-main{
+			background-color: #f4c32f;
+			margin-right: 15px;
+		}
+
+		.btn-offer-main:hover{
+			background-color: #f6f6f6;
+		}
+
+		.btn-offer-second{
+			border: 1px solid #f6f6f6;
+			color: #f6f6f6;
+		}
+
+		.btn-offer-second:hover{
+			background-color: #f6f6f6;
+			color: #333;
+		}
+
+
+/*===Our Services===*/
+
+#our-services{
+
+}
+
+	.services-div{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		padding: 0 40px;
+		margin: 30px 0;
+	}
+
+		.service-box{
+			max-width: 300px;
+			color: #333;
+		}
+
+			.service-box img{
+				margin-bottom: 10px;
+			}
+
+			.service-box h3{
+				margin-bottom: 8px;
+			}
+
+			.service-box p{
+				font-size: 16px;
+			}
+
+
+/*===Advantages===*/
+
+#advantages{
+	background-color: #f6f6f6;
+}
+
+	.advantages-div{
+		margin:60px 0 40px 0;
+	}
+
+		.list-advantages{
+			width: 100%;
+			display: inline-block;
+		}
+
+			.list-advantages li{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+				align-items: center;
+				text-align: left;
+				margin-bottom: 30px;
+			}
+
+			.list-advantages li:last-child{
+				margin-bottom: 0;
+			}
+
+				.list-content{
+					
+				}
+
+					.list-content h3{
+						font-size: 24px;
+						margin-bottom: 10px;
+					}
+
+					.list-content p{
+						font-size: 16px;
+					}
+
+				.list-advantages li i{
+					background-color: green;
+					color: #f6f6f6;
+					font-size: 24px;
+					padding: 10px 7px;
+					border-radius: 50%;
+				}
+
+
+/*===Map===*/
+
+/*===Footer===*/
+
+#footer{
+	background-color: #000;
+	padding: 35px 30px;
+}
+
+	.footer-content{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.footer-content p{
+		color: #666;
+	}
+	
+
+/*=== The End ;) ===*/
+
+

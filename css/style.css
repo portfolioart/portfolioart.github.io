@@ -1,0 +1,231 @@
+
+/*===GENERAL SETTINGS===*/
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: 'Open-Sans', sans-serif;
+	position: relative;
+}
+
+li{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:visited{
+	color: #999;
+}
+
+.main-section{
+	padding: 40px;
+}
+
+.section-header{
+	text-align: center;
+	margin-bottom: 32px;
+}
+
+	.section-header h2{
+		font-size: 36px;
+	}
+
+
+/*===HEADER===*/
+
+#header{
+	background: url(../img/bg-header2.jpg) center center no-repeat / cover;
+	height: 100vh;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+	.header-offer{
+		text-align: center;
+	}
+
+		.header-offer h1{
+			font-size: 48px;
+			font-weight: 300;
+			margin-bottom: 14px;
+		}
+
+		.header-offer hr{
+			width: 140px;
+			display: inline-block;
+			margin-bottom: 15px;
+		}
+
+		.header-offer p{
+			font-size: 24px;
+			margin-bottom: -10px;
+		}
+
+	.arrow-down{
+		margin-bottom: 12px;
+		padding: 14px 10px;
+		border-radius: 50%;
+		transition: 0.2s;
+		border: 1px solid rgba(0,0,0,0);
+	}
+	
+	.arrow-down:hover{
+		border: 1px solid #999;
+		color: #999;
+	}
+
+
+/*===MY PORTFOLIO===*/
+
+#my-portfolio{
+	padding-bottom: 5px;
+}
+
+	.portfolio{
+		display: flex;
+		justify-content: space-around;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin: 20px 0;
+	}
+
+		.work-box{
+			background-color: white;
+			max-width: 400px;
+			padding-bottom: 15px;
+			text-align: center;
+			border-radius: 8px;
+			box-shadow: 0px 0px 8px 0px black;
+			margin-bottom: 35px;
+		}
+
+			.work-box img{
+				max-width: 100%;
+				border-bottom: 3px solid #999;
+			}
+
+			.work-box h3{
+				margin: 15px 0 20px 0;
+				font-size: 22px;
+			}
+
+			.download-btn{
+				display: inline-block;
+				margin-bottom: 0px;
+				padding: 12px 25px;
+				border: 1px solid #111;
+				border-radius: 90px;
+				color: #333;
+				transition: 0.2s;
+			}
+
+			.download-btn:hover{
+				border: 1px solid #777;
+				color: #888;
+				transition: 0.2s;
+			}
+
+
+/*===Footer===*/
+
+#footer{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #000;
+	padding: 25px 40px;
+}
+
+	.copyright a{
+		color: white;
+		font-size: 24px;
+		transition: 0.2s;
+		margin-bottom: 10px;
+		display: inline-block;
+	}
+
+		.copyright a:hover{
+			color: #999;
+			font-size: 24px;
+			transition: 0.2s;
+		}
+
+	.copyright p{
+		color: #999;
+		font-size: 14px;
+	}
+
+	.community a{
+		font-size: 24px;
+		margin: 0 7px;
+		color: white;
+		transition: 0.2s;
+	}
+
+		.community a:hover{
+			color: #999;
+		}
+
+
+/*===Adaptive Settings===*/
+
+@media (max-width: 520px){
+
+	
+	#my-portfolio .portfolio{
+		margin: 0 0;
+	}
+
+	.copyright p{
+		font-size: 12px;
+	}
+
+}
+
+@media (max-width: 451px){
+
+	.header-offer h1{
+		font-size: 36px;
+	}
+
+	.header-offer p{
+		font-size: 18px;
+	}
+
+	.section-header h2{
+		font-size: 28px;
+	}
+
+	.work-box h3{
+		font-size: 18px;
+	}
+
+	.work-box a{
+		font-size: 14px;
+	}
+
+	.copyright{
+		margin-top: 5px;
+		margin-bottom: 25px;
+		text-align: center;
+	}
+
+	.community a{
+		font-size: 28px;
+	}
+
+}
+
+
+/*===The End ;) ===*/
