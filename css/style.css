@@ -1,5 +1,5 @@
 
-/*===GENERAL SETTINGS===*/
+/*=== General Settings ===*/
 
 *{
 	margin: 0;
@@ -7,20 +7,14 @@
 }
 
 body{
-	font-family: 'Open-Sans', sans-serif;
-	position: relative;
+	font-family: 'Montserrat', sans-serif;
+	cursor: default;
+	color: #333;
+	text-align: center;
 }
 
-li{
-	list-style: none;
-}
-
-a{
+a, a:hover, a:visited{
 	text-decoration: none;
-}
-
-a:visited{
-	color: #999;
 }
 
 .main-section{
@@ -28,115 +22,159 @@ a:visited{
 }
 
 .section-header{
-	text-align: center;
-	margin-bottom: 32px;
+	font-size: 19px;
 }
 
-	.section-header h2{
-		font-size: 36px;
-	}
 
-
-/*===HEADER===*/
+/*=== Header ===*/
 
 #header{
-	background: url(../img/bg-header2.jpg) center center no-repeat / cover;
-	height: 100vh;
-	color: white;
+	background: url(../img/bg-header.jpg) center center no-repeat / cover;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	box-shadow: 0px 0px 25px 3px #333;
+	height: 100vh;
+	color: #f6f6f6;
+	box-shadow: 0px 0px 30px 3px #000;
+	position: relative;
+	z-index: 3;
 }
 
-	.header-offer{
-		text-align: center;
+	.logo{
+		color: #f6f6f6;
+		font-size: 22px;
+		transition: 0.2s;
+		margin-top: 20px;
 	}
 
-		.header-offer h1{
-			font-size: 48px;
-			font-weight: 300;
-			margin-bottom: 14px;
+	.logo:hover{
+		transform: rotate(-10deg);
+	}
+
+		.logo span{
+			padding: 3px 6px;
+			border: 1px solid #f6f6f6;
+			border-radius: 3px;
+			margin-right: 3px;
 		}
 
-		.header-offer hr{
-			width: 140px;
+	.offer{
+		text-align: center;
+		cursor: default;
+	}
+
+		.offer h1{
+			font-size: 42px;
+			margin-bottom: 5px;
+		}
+
+		.offer hr{
 			display: inline-block;
-			margin-bottom: 15px;
+			width: 100px;
 		}
 
-		.header-offer p{
+		.offer p{
 			font-size: 24px;
-			margin-bottom: -10px;
+			margin-top: 20px;
+			line-height: 30px;
 		}
 
 	.arrow-down{
-		margin-bottom: 12px;
-		padding: 14px 10px;
-		border-radius: 50%;
+		color: #f6f6f6;
 		transition: 0.2s;
-		border: 1px solid rgba(0,0,0,0);
+		font-size: 35px;
+		margin-bottom: 5px;
 	}
-	
+
 	.arrow-down:hover{
-		border: 1px solid #999;
 		color: #999;
 	}
 
 
-/*===MY PORTFOLIO===*/
+/*=== About Me ===*/
 
-#my-portfolio{
-	padding-bottom: 5px;
+#about-me{
+	background-color: #f1f1f1;
 }
 
-	.portfolio{
-		display: flex;
-		justify-content: space-around;
-		flex-direction: row;
-		flex-wrap: wrap;
-		margin: 20px 0;
+	.about-me-text{
+		display: inline-block;
+		max-width: 870px;
+		margin: 20px 0 0 0;
 	}
 
-		.work-box{
-			background-color: white;
-			max-width: 400px;
-			padding-bottom: 15px;
-			text-align: center;
-			border-radius: 8px;
-			box-shadow: 0px 0px 8px 0px black;
-			margin-bottom: 35px;
+
+/*=== My Portfolio ===*/
+
+#my-portfolio{
+	background: url(../img/bg-my-portfolio.jpg) center center no-repeat / cover;
+	color: #f6f6f6;
+	position: relative;
+	padding-bottom: 40px;
+}	
+
+	.www{
+		height: 40px;
+		width: 100%;
+	}
+
+	#my-portfolio .section-header{
+		margin-top: 30px;
+	}
+
+	.work-boxes{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		flex-wrap: wrap;
+		margin: 50px 20px 0px 20px;
+	}
+
+		.work{
+			position: relative;
+			max-width: 396px;
+			height: 100%;
+			transition: 0.2s;
+			margin-bottom: 50px;
+			border: 2px solid #f6f6f6;
 		}
 
-			.work-box img{
-				max-width: 100%;
-				border-bottom: 3px solid #999;
+		.work:hover{
+			transform: rotate(-10deg);
+			box-shadow: 0px 0px 20px 2px white;
+		}
+
+			.work img{
+				width: 100%;
+				height: 100%;
 			}
 
-			.work-box h3{
-				margin: 15px 0 20px 0;
-				font-size: 22px;
-			}
-
-			.download-btn{
-				display: inline-block;
-				margin-bottom: 0px;
-				padding: 12px 25px;
-				border: 1px solid #111;
-				border-radius: 90px;
-				color: #333;
+			.wrapper{
+				position: absolute;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(89,49,124,0);
+				color: rgba(0,0,0,0);
 				transition: 0.2s;
+				display: flex;
+				justify-content: center;
+				align-items: center;
 			}
 
-			.download-btn:hover{
-				border: 1px solid #777;
-				color: #888;
-				transition: 0.2s;
+			.wrapper:hover{
+				background-color: rgba(89,49,124,0.7);
+				color: rgba(255,255,255,1);
 			}
 
+				.wrapper h3{
+					font-size: 26px;
+				}
 
-/*===Footer===*/
+
+/*=== Footer ===*/
 
 #footer{
 	display: flex;
@@ -146,20 +184,28 @@ a:visited{
 	align-items: center;
 	background-color: #000;
 	padding: 25px 40px;
+	text-align: left;
 }
 
 	.copyright a{
-		color: white;
-		font-size: 24px;
 		transition: 0.2s;
 		margin-bottom: 10px;
 		display: inline-block;
+		color: #f6f6f6;
+		font-size: 22px;
 	}
 
-		.copyright a:hover{
-			color: #999;
-			font-size: 24px;
-			transition: 0.2s;
+	.copyright a:hover{
+		color: #999;
+		font-size: 22px;
+		transition: 0.2s;
+	}
+
+		.copyright a span{
+			padding: 3px 6px;
+			border: 1px solid #f6f6f6;
+			border-radius: 3px;
+			margin-right: 3px;
 		}
 
 	.copyright p{
@@ -175,58 +221,9 @@ a:visited{
 	}
 
 		.community a:hover{
-			color: #999;
+			color: #59317C;
 		}
-
-
-/*===Adaptive Settings===*/
-
-@media (max-width: 520px){
-
 	
-	#my-portfolio .portfolio{
-		margin: 0 0;
-	}
-
-	.copyright p{
-		font-size: 12px;
-	}
-
-}
-
-@media (max-width: 451px){
-
-	.header-offer h1{
-		font-size: 36px;
-	}
-
-	.header-offer p{
-		font-size: 18px;
-	}
-
-	.section-header h2{
-		font-size: 28px;
-	}
-
-	.work-box h3{
-		font-size: 18px;
-	}
-
-	.work-box a{
-		font-size: 14px;
-	}
-
-	.copyright{
-		margin-top: 5px;
-		margin-bottom: 25px;
-		text-align: center;
-	}
-
-	.community a{
-		font-size: 28px;
-	}
-
-}
 
 
-/*===The End ;) ===*/
+		
