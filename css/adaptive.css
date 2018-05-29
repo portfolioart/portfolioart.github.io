@@ -1,0 +1,54 @@
+
+/*=== Adaptive Settings ===*/
+
+@media (max-width: 605px){
+
+	.offer h1{
+		font-size: 36px;
+	}
+
+	.offer p{
+		font-size: 19px;
+	}
+
+}
+
+@media (max-width: 507px){
+
+	.offer h1{
+		font-size: 32px;
+	}
+
+	.offer p{
+		font-size: 16px;
+	}
+
+	#footer{
+		text-align: center;
+	}
+
+		.copyright a{
+			display: block;
+			margin-bottom: 25px;
+		}
+
+		.copyright p{
+			font-size: 12px;
+			display: block;
+			margin-bottom: 25px;
+		}
+
+}
+
+@media (max-width: 440px){
+
+	.offer h1{
+		font-size: 28px;
+		font-weight: 300;
+	}
+
+	.offer p{
+		font-size: 16px;
+	}
+
+}
