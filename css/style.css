@@ -189,7 +189,7 @@ a, a:hover, a:visited{
 
 	.copyright a{
 		transition: 0.2s;
-		margin-bottom: 10px;
+		margin-bottom: 15px;
 		display: inline-block;
 		color: #f6f6f6;
 		font-size: 22px;
@@ -210,7 +210,7 @@ a, a:hover, a:visited{
 
 	.copyright p{
 		color: #999;
-		font-size: 14px;
+		font-size: 12px;
 	}
 
 	.community a{
