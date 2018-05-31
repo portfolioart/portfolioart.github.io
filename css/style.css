@@ -29,7 +29,7 @@ a, a:hover, a:visited{
 /*=== Header ===*/
 
 #header{
-	background: url(../img/bg-header.jpg) center center no-repeat / cover;
+	background: url(../img/bg-header.jpg) fixed center center no-repeat / cover;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -108,7 +108,7 @@ a, a:hover, a:visited{
 /*=== My Portfolio ===*/
 
 #my-portfolio{
-	background: url(../img/bg-my-portfolio.jpg) center center no-repeat / cover;
+	background: url(../img/bg-my-portfolio.jpg) fixed center center no-repeat / cover;
 	color: #f6f6f6;
 	position: relative;
 	padding-bottom: 40px;
