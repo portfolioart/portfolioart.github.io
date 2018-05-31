@@ -29,7 +29,13 @@ a, a:hover, a:visited{
 /*=== Header ===*/
 
 #header{
-	background: url(../img/bg-header.jpg) fixed center center no-repeat / cover;
+	background-image: url(../img/bg-header.jpg);
+	-webkit-background-position: center;
+	background-position: center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -108,7 +114,13 @@ a, a:hover, a:visited{
 /*=== My Portfolio ===*/
 
 #my-portfolio{
-	background: url(../img/bg-my-portfolio.jpg) fixed center center no-repeat / cover;
+	background-image: url(../img/bg-my-portfolio.jpg);
+	-webkit-background-position: center;
+	background-position: center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	color: #f6f6f6;
 	position: relative;
 	padding-bottom: 40px;
