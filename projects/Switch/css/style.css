@@ -53,7 +53,13 @@ p{
 /*===Header===*/
 
 #header{
-	background: url('../img/bg-header.jpg') fixed center no-repeat / cover;
+	background-image: url(../img/bg-header.jpg);
+	-webkit-background-position: center;
+	background-position: center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	height: 100vh;
 	display: flex;
 	flex-direction: column;

@@ -39,7 +39,13 @@ hr{
 }
 
 #header-section{
-	background: url('../img/header.jpg') top no-repeat / cover;
+	background-image: url(../img/header.jpg);
+	-webkit-background-position: center;
+	background-position: center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
