@@ -1,0 +1,474 @@
+
+/*=== General Settings ===*/
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: "Montserrat", sans-serif;
+	cursor: default;
+	color: #333;
+}
+
+a, a:hover, a:visited{
+	text-decoration: none;
+}
+
+li{
+	list-style: none;
+}
+
+img{
+	width: 100%;
+}
+
+.section-header{
+	margin: 0 0 30px 0;
+}
+
+	.section-header h2{
+		font-size: 32px;
+	}
+
+.main-section{
+	padding: 90px 40px;
+}
+
+.transition{
+	transition: 0.2s;
+}
+
+
+/*=== Header ===*/
+
+#header{
+	text-align: center;
+	height: 100vh;
+	background-image: url(../img/header-bg.jpg);
+	-webkit-background-position: center;
+	background-position: center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-color: #fff;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	box-shadow: 0 0 30px 1px #111;
+}
+
+	.header-title{
+		background-color: rgba(0,0,0,0.8);
+		color: #f6f6f6;
+		width: 55%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 20px;
+		align-items: center;
+		position: relative;
+	}
+
+		.logo{
+			color: #f6f6f6;
+			font-size: 22px;
+		}
+
+		.logo:hover{
+			color: #999;
+			transform: rotate(-6deg);
+		}
+
+			.logo span{
+				padding: 3px;
+				border: 1px solid #FFCF3F;
+				border-radius: 6px;
+			}
+
+		.offer{
+			margin-bottom: 20px;
+			max-width: 700px;
+		}
+
+			.offer h1{
+				display: inline-block;
+				font-size: 39px;
+				font-weight: 300;
+				padding: 30px 20px;
+				border-top: 1px solid #f6f6f6;
+				border-bottom: 1px solid #f6f6f6;
+				margin-bottom: 30px;
+			}
+
+			.offer p{
+				font-size: 21px;
+			}
+
+		.scroll-down{
+			padding: 10px;
+			border: 1px solid rgba(0,0,0,0);
+			position: absolute;
+			bottom: 20px;
+			color: #f6f6f6;
+			border-radius: 50%;
+			font-size: 20px;
+			animation: arrow 1s infinite;
+		}
+
+		.scroll-down:hover{
+			border-color: #FFCF3F;
+			color: #FFCF3F;
+			font-size: 16px;
+			animation: none;
+		}
+
+
+/*=== About Us ===*/
+
+#about-us{
+
+}
+
+	.about-us-content{
+		max-width: 800px;
+	}
+
+	.about-us-content p{
+		font-size: 18px;
+	}
+
+
+/*=== Why We ===*/
+
+#why-we{
+	background-color: #1a1a1a;
+	color: #f6f6f6;
+}
+
+	.row{
+		margin-top: 50px;
+	}
+
+		.benefits-list{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+
+			.benefit{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+				.benefit i{
+					margin-right: 20px;
+					font-size: 46px;
+					color: #FFCF3F;
+				}
+
+				.benefit p{
+					font-size: 16px;
+				}
+
+	.img-why-us{
+
+	}
+
+
+/*=== Steps ===*/
+
+#steps{
+	background-color: #f6f6f6;
+}
+
+	.steps-box{
+
+	}
+
+		.step{
+			padding: 20px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			flex-wrap: nowrap;
+		}
+
+			.item{
+				padding: 10px 19px;
+				border-radius: 50%;
+				background-color: #FFCF3F;
+				font-size: 24px;
+				margin-right: 15px;
+			}
+
+			.step-content{
+
+			}
+
+				.step-content h3{
+					font-size: 24px;
+				}
+
+				.step-content p{
+					font-size: 16px;
+				}
+
+
+/*=== Gallery ===*/
+
+#gallery{
+	background-color: #111;
+	color: #f6f6f6;
+}
+
+	.gallery-box{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+		.gallery-img{
+			border: 2px solid #333;
+			height: 200px;
+			width: 300px;
+			padding: 0;
+			margin: 20px;
+			position: relative;
+		}	
+
+			.gallery-img img{
+				position: absolute;
+				z-index: 1;
+			}
+
+			.wrapper{
+				width: 100%;
+				height: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: rgba(0,0,0,0);
+				color: rgba(0,0,0,0);
+				font-size: 24px;
+				font-weight: 400;
+				position: absolute;
+				z-index: 2;
+			}
+
+			.wrapper:hover{
+				color: #333;
+				background-color: rgba(255,207,63,0.7);
+			}
+
+
+/*=== Support ===*/
+
+#support{
+	  background-color: #f9f9f9;
+}
+
+	.support-div{
+		margin-top: 70px;
+	}
+
+		.mail-and-call{
+
+		}
+
+			.mail-and-call p{
+				font-size: 18px;
+			}
+
+			.mail-and-call p a{
+				color: #999;
+			}
+
+			.mail-and-call p a:hover{
+				color: #FFCF3F;
+			}
+
+		.messengers{
+
+		}
+
+			.messengers a{
+				font-size: 28px;
+				color: #999;
+			}
+
+			.messengers a:hover{
+				font-size: 28px;
+				color: #FFCF3F;
+			}
+
+	.img-support{
+		border: 1px solid #333;
+		padding: 0;
+	}
+
+
+/*=== Map ===*/
+
+#map{
+	height: 450px;
+	position: relative;
+	background: #999;
+}
+
+
+/*=== Footer ===*/
+
+#footer{
+	background: #000;
+	padding: 30px 70px 25px 70px;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+	#footer p{
+		color: #777;
+		font-size: 14px;
+		margin: 0;
+	}
+
+		#footer p i{
+			padding: 0;
+		}
+
+	.logo-footer{
+		color: #f6f6f6;
+		font-size: 22px;
+	}
+
+	.logo-footer:hover{
+		color: #999;
+	}
+
+		.logo-footer span{
+			padding: 3px;
+			border: 1px solid #FFCF3F;
+			border-radius: 6px;
+		}
+
+
+/*=== Adaptive Settings ===*/
+
+@media (max-width: 1268px){
+
+	.header-title{
+		width: 70%;
+	}
+
+}
+
+@media (max-width: 767px){
+
+	.benefits-list{
+		margin-bottom: 20px;
+	}
+
+	.gallery-img{
+		width: 400px;
+		height: 268px;
+	}
+
+	.support-div{
+		margin-top: 0;
+		margin-bottom: 40px;
+	}
+
+}
+
+@media (max-width: 630px){
+
+	.header-title{
+		width: 100%;
+	}
+
+	#footer{
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+		.logo-footer{
+			margin: 26px 0;
+		}
+
+}
+
+@media (max-width: 538px){
+
+	.gallery-img{
+		overflow: hidden;
+		width: 100%;
+		height: 230px;
+	}
+
+}	
+
+@media (max-width: 450px){
+
+	.offer h1{
+		font-size: 34px;
+	}
+
+	.offer p{
+		font-size: 16px;
+	}
+
+	.section-header{
+		margin: 0 0 20px 0;
+	}
+
+		.section-header h2{
+			font-size: 27px;
+		}
+
+	.about-us-content p{
+		font-size: 16px
+	}
+
+	.benefit p{
+		font-size: 14px;
+	}
+
+	.step-content h3{
+		font-size: 20px;
+	}
+
+	.step-content p{
+		font-size: 14px;
+	}
+
+	.gallery-img{
+		height: 200px;
+	}
+
+}
+
+@media (max-width: 400px){
+
+	.gallery-img{
+		height: 150px;
+	}
+
+	.mail-and-call p{
+		font-size: 17px;
+	}
+
+}
+
+
+/*=== The End :) ===*/

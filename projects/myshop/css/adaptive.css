@@ -1,0 +1,10 @@
+
+/*=== Adaptive Settings ===*/
+
+@media screen(max-width: 1268px) {
+
+	.header-title{
+		width: 70%;
+	}
+	
+}
