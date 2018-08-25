@@ -1,0 +1,124 @@
+
+/*=== General Settings ===*/
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	cursor: default;
+	color: #333;
+}
+
+img{
+	max-width: 100%;
+}
+
+a, a:hover, a:visited{
+	text-decoration: none;
+}
+
+.transition{
+	transition: 0.2s;
+}
+
+
+/*=== Main ===*/
+
+#main{
+	height: 100vh;
+	background: linear-gradient(to top left, #f0c27b, #4b1248);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+	.support-box-main{
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		background-color: #f6f6f6;
+		border: 3px solid #999;
+		border-radius: 20px;
+		padding: 80px 40px 15px 40px;
+		text-align: center;
+		max-width: 800px;
+		margin-top: 40px;
+	}
+
+		.logo-avatar{
+			position: absolute;
+			width: 120px;
+			height: 120px;
+			overflow: hidden;
+			border: 3px solid #999;
+			top: -63px;
+			border-radius: 50%;
+		}
+
+			.logo-avatar img{
+				width: 100%;
+				
+			}
+
+		.offer-box{
+			padding: 0 0 20px 0;
+		}
+
+			.offer-box h1{
+				font-size: 26px;
+				margin-bottom: 10px;
+			}
+
+			.offer-box p{
+				font-size: 16px;
+				font-weight: 400;
+			}
+
+		.support-links{
+			margin: 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+			.support-link{
+				display: inline-block;
+				width: 150px;
+				margin: 6px 0;
+				padding: 8px 10px;
+				text-align: left;
+				background-color: #e5e5e5;
+				border-radius: 6px;
+				color: #333;
+			}
+
+			.support-link:first-child{
+				margin-top: 0;
+			}
+
+			.support-link:last-child{
+				margin-bottom: 0;
+			}
+
+			.support-link:hover{
+				transform: rotate(5deg);
+				color: #f1f1f1;
+				background-color: #999;
+			}
+
+		.footer{
+			margin: 20px 10px 5px 10px;
+		}
+
+			.footer p{
+				color: #777;
+				font-size: 13px;
+			}
+
+/*=== T'End ===*/
